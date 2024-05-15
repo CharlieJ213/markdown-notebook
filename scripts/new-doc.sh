@@ -4,13 +4,18 @@
 # You can then create a new document immediately in this folder with `new-doc document-name`
 
 # Replace with `path/to/docs`
-alias docs="cd ~/Documents/docs"
+NOTEBOOK_SYSTEM_PATH="~/Documents/markdown-notebook"
+
+# Replace with whatever you'd like the command to be to jump to this notebook in your terminal
+DOCS_ALIAS_IDENTIFIER="docs"
+
+alias $DOCS_ALIAS_IDENTIFIER="cd $NOTEBOOK_SYSTEM_PATH"
 
 new-doc () {
     # Feel free to add / change the folders you want suggested here
     local exclude_folders=("assets")
     local doc_name="$1"
-    local dir="$(docs && pwd)/src"
+    local dir="$NOTEBOOK_SYSTEM_PATH/src"
 
     # Build the exclude pattern for grep
     local exclude_pattern=$(printf "|%s" "${exclude_folders[@]}")

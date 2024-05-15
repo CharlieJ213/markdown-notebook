@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "yzhang.markdown-all-in-one",
+    "davidanson.vscode-markdownlint",
+    "yzane.markdown-pdf",
+    "bierner.markdown-emoji",
+  ]
+}

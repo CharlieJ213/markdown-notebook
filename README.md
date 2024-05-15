@@ -15,8 +15,7 @@ npm install
 This installs `husky` as a dependency and will trigger `npm run prepare`, which will set up the pre-commit hooks
 
 ```bash
-echo "source ~/$path_to_docs/scripts/new-doc.sh" >> ~/.zshrc \
-source ~/.zshrc
+echo "source ~/Documents/markdown-notebook/scripts/new-doc.sh" >> ~/.zshrc | source ~/.zshrc
 ```
 
 Replace `$path_to_docs` with the path on your local system to the root of this repository. (Can be found by running `pwd` in your terminal when open in this folder).
